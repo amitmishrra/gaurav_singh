@@ -8,6 +8,13 @@
     <title>Gaurav Singh</title>
     <link rel="logo" href="./icons/icon1.png">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("7JPlkoF3xDWkv7XjM");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -32,11 +39,11 @@
             <ul class="ul">
                 <li> <a onclick="show()" href="#hm">Home</a></li>
 
-                <li> <a onclick="show()" href="">Experince</a></li>
+                <li> <a onclick="show()" href="#exp">Experince</a></li>
 
-                <li> <a onclick="show()" href="#">Blogs</a></li>
+                <li> <a onclick="show()" href="#blog">Blogs</a></li>
 
-                <li> <a onclick="show()" href="">Contact</a></li>
+                <li> <a onclick="show()" href="#co">Contact</a></li>
 
             </ul>
         </div>
@@ -54,6 +61,69 @@
         <img src="./icons/manual-testing.png" alt="">
 
 
+    </section>
+
+
+
+    <Section id="exp">
+
+        <h1>
+            Experince
+        </h1>
+
+        <span id="s">
+
+      <div class="box2">
+        <div class="job">
+<span></span>
+        <img src="./icons/ibm.jpg" alt="">
+        <h3> Oct. 2011 <br> IBM
+            <BR> Tech Server Ops.</BR>
+        </h3>
+        </div>
+
+
+        <div class="job">
+            <span></span>
+            <img id="ask" src="./icons/ask.jpg" alt="">
+            <h3> Feb. 2015 <br> ASK-EHS PVT. LTD
+                <BR> Test Engineer</BR>
+            </h3>
+        </div>
+
+
+
+
+
+        <div class="job">
+            <span></span>
+            <img id="aar" src="./icons/aar.jpg" alt="">
+            <h3> May 2015 <br> AartekOne
+                <BR> Test Engineer</BR>
+            </h3>
+        </div>
+
+
+        <div class="job">
+            <span></span>
+            <img src="./icons/fin.jpg" alt="">
+            <h3> June 2017 <br> Finserv
+                <BR>STAE</BR>
+            </h3>
+        </div>
+
+
+        <div class="job">
+            <span></span>
+            <img id="mph" src="./icons/mph.jpg" alt="">
+            <h3> Feb. 2021 <br> Mphasis
+                <BR> Module Lead-Testing</BR>
+            </h3>
+        </div>
+
+        </div>
+
+        </span>
 
 
 
@@ -63,14 +133,75 @@
 
 
 
+    </Section>
+
+
+
+    <section id="blog">
+
+        <h1>Blogs</h1>
+
+
+
+        <div class="bl">
+            <h3>Heading</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit quas facere eos quisquam reiciendis officia voluptas, cum corporis molestiae obcaecati iure, error neque commodi doloremque magni. Similique, tempore nulla. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Omnis ipsa accusamus praesentium deleniti debitis tenetur quo soluta laudantium vel dolorum!
+            <div class="a">
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="bl">
+            <h3>Heading</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit quas facere eos quisquam reiciendis officia voluptas, cum corporis molestiae obcaecati iure, error neque commodi doloremque magni. Similique, tempore nulla.
+            <div class="a">
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="bl">
+            <h3>Heading</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit quas facere eos quisquam reiciendis officia voluptas, cum corporis molestiae obcaecati iure, error neque commodi doloremque magni. Similique, tempore nulla.
+            <div class="a">
+                <a href="">Read More</a>
+            </div>
+        </div>
 
 
     </section>
 
 
+    <section id="co" class="contact">
+        <h1>Contact</h1>
+
+        <div class="cont1">
+
+            <div class="form">
+
+                <div class="bb" id="name">
+
+                    <input type="text" class="txt" required id="nm">
+                    <label class="lab" for="">Name</label>
+                </div>
+
+                <div class="bb" id="mail">
+
+                    <input type="text" class="txt" required id="ml">
+                    <label class="lab" class="txt" for="">Mail</label>
+                </div>
 
 
+                <div class="bb" id="mess">
+                    <textarea required class="txt" id="ms"></textarea>
+                    <label class="lab" id="m" for="">Message</label>
+                </div>
 
+                <button onclick='sendMail()' type="submit">Send</button>
+                <h2 id="msg2">Message Sent!</h2>
+
+
+            </div>
+            <img src="./icons/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="">
+        </div>
 
     </section>
 
