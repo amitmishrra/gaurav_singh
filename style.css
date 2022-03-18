@@ -43,22 +43,25 @@ html {
 .navbar ul li a:hover {
     transition: 0.2s;
     text-decoration: 6px underline rgb(56 181 124);
-    text-decoration: 6px underline rgb(0 66 255);
+    /* text-decoration: 6px underline rgb(0 66 255); */
     ;
 }
 
 .logo {
     position: fixed;
     font-size: 35px;
+    pointer-events: none;
 }
 
 .logo #sp1 {
     color: rgb(76, 75, 75);
+    pointer-events: none;
 }
 
 .logo #sp2 {
     color: rgb(56 181 124);
-    color: rgb(0 53 204);
+    /* color: rgb(0 53 204); */
+    pointer-events: none;
 }
 
 .navbar::before {
@@ -77,6 +80,8 @@ html {
     position: relative;
     display: flex;
     top: 100px;
+    border-bottom: 2px solid rgb(76, 75, 75);
+    padding-bottom: 20px;
 }
 
 #hm img {
@@ -88,18 +93,277 @@ html {
     color: rgb(76, 75, 75);
 }
 
+#exp {
+    position: relative;
+    top: 100px;
+}
+
+#exp h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#s {
+    position: relative;
+    top: 50px;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(182, 182, 182);
+    display: block;
+    margin-top: 4px;
+    z-index: 0;
+    margin: auto;
+}
+
+#s div {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(76, 75, 75);
+    margin-bottom: 30px;
+}
+
+.job {
+    margin-top: -8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 10;
+}
+
+.job:hover {
+    box-shadow: 0px 2px 2px 2px rgb(61, 60, 60);
+    border-radius: 10px;
+    z-index: 6;
+    background-color: white;
+}
+
+.job span {
+    display: block;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 25px;
+}
+
+.job img {
+    position: relative;
+    margin-top: 0px;
+    margin: auto;
+    /* width: 60%;
+    height: 50%; */
+}
+
+#blog {
+    position: relative;
+    top: 500px;
+    padding: 30px;
+}
+
+#blog h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.bl {
+    /* width: 90%; */
+    margin: auto;
+    border: 1px solid rgb(182, 182, 182);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.a {
+    width: 100px;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: rgb(182, 182, 182);
+    text-decoration: none;
+    color: azure;
+}
+
+.a:hover {
+    background-color: rgb(56 181 124);
+    color: rgb(10, 10, 10);
+}
+
+.contact {
+    position: relative;
+    top: 500px;
+    border-top: 1px solid #605e5e;
+}
+
+.contact h1 {
+    color: #605e5e;
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    width: 283px;
+}
+
+.bb {
+    color: #605e5e;
+}
+
+.cont1 {
+    display: flex;
+}
+
+.form {
+    width: 40%;
+}
+
+.cont1 img {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+}
+
+.lab {
+    color: #605e5e;
+    font-size: 40px;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt {
+    width: 100%;
+    font-size: 20px;
+    color: #0c0a0a;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #605e5e;
+}
+
+.txt:focus~label {
+    top: -5px;
+    color: rgb(56 181 124);
+    border: none;
+}
+
+.txt:focus {
+    border: none;
+    border-bottom: 1px solid rgb(56 181 124);
+}
+
+.txt:valid~label {
+    top: -5px;
+}
+
+#ms {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form div {
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form button {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 290px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 35px;
+    top: 20px;
+    margin: auto;
+    border-style: none;
+}
+
+.form button:hover {
+    background-color: rgb(56 181 124);
+    transition: 0.5s;
+}
+
+.form h2 {
+    font-size: 20px;
+    top: 30px;
+    position: relative;
+    color: #3dd8c9;
+    width: 155px;
+    display: none;
+    margin: auto;
+    border: 1px solid #3dd8c9;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 
 /* for tablets */
 
 @media screen and (max-width: 1100px) {
-#hm {
+    #hm {
         flex-direction: column;
         top: 0px;
     }
-#hm img {
+    #hm img {
         width: 100%;
     }
-
+    #exp {
+        position: relative;
+        top: 30px;
+    }
+    .job img {
+        position: relative;
+        margin-top: 0px;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    .job h3 {
+        font-size: 15px;
+    }
+    #blog {
+        position: relative;
+        top: 273px;
+        padding: 30px;
+    }
+    .contact {
+        top: 300px;
+    }
+    .cont1 {
+        flex-direction: column;
+    }
+    .cont1 img {
+        position: relative;
+        right: 0px;
+        width: 100%;
+    }
+    .form button {
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+    }
+    .lab {
+        color: #605e5e;
+        font-size: 25px;
+    }
+    .form {
+        padding: 20px;
+        margin: auto;
+    }
+    #ms {
+        width: auto;
+        border-bottom: 1px solid #605e5e;
+    }
 }
 
 
@@ -112,7 +376,7 @@ html {
     }
     .navbar::before {
         position: fixed;
-        height: 50px;
+        height: 60px;
         z-index: 1;
     }
     .navbar .logo {
@@ -177,5 +441,98 @@ html {
     }
     #hm img {
         width: 100%;
+    }
+    #exp {
+        position: relative;
+        top: 10px;
+    }
+    #exp h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    #s {
+        top: 0px;
+        height: 5px;
+        width: 100%;
+        background-color: rgba(182, 182, 182, 0);
+        animation: none;
+    }
+    #s div {
+        margin-bottom: 50px;
+    }
+    .job h3 {
+        font-size: 20px;
+    }
+    .job span {
+        display: none;
+    }
+    .job {
+        margin-top: -3px;
+        box-shadow: 2px 2px 2px rgb(182, 182, 182);
+        width: 60%;
+        margin: auto;
+        padding-top: 5px;
+    }
+    #s div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .job img {
+        position: relative;
+        margin-top: 0px;
+        margin: auto;
+        width: 40%;
+        height: 40%;
+    }
+    #blog {
+        position: relative;
+        top: 1600px;
+        padding: 30px;
+    }
+    @media screen and (max-width: 500px) {
+        #blog {
+            position: relative;
+            margin-top: -250px;
+        }
+    }
+    .contact {
+        top: 1632px;
+    }
+    .contact h1 {
+        font-size: 30px;
+        width: 170px;
+    }
+    .lab {
+        top: 15px;
+        color: #290303;
+        font-size: 20px;
+    }
+    .txt:focus~label {
+        top: -10px;
+    }
+    .txt {
+        width: 200px;
+        height: 25px;
+    }
+    #ms {
+        width: 200px;
+        border-bottom: 1px solid black;
+    }
+    .form div {
+        padding-top: 15px;
+    }
+    .form h2 {
+        font-size: 15px;
+        width: 114px;
+        left: 24px;
+        top: 40px;
+    }
+    .form bottom {
+        height: 39px;
+        width: 120px;
+        border-radius: 35px;
+        top: -4px;
     }
 }
