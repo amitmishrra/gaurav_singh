@@ -9,12 +9,7 @@
     <link rel="logo" href="./icons/logo2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("7JPlkoF3xDWkv7XjM");
-        })();
-    </script>
+
 
 </head>
 
@@ -41,7 +36,7 @@
                 <li> <a onclick="show()" href="#hm">Home</a></li>
 
                 <li> <a onclick="show()" href="#exp">Experince</a></li>
-                
+
                 <li> <a onclick="show()" href="#skill">Skills</a></li>
 
                 <li> <a onclick="show()" href="#blog">Blogs</a></li>
@@ -62,6 +57,8 @@
             <div class="sm">
                 <a href="https://www.linkedin.com/in/gaurav-singh27/" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-github"></a>
+
+                <button id="resume"><a href="https://drive.google.com/file/d/1H1amdwlEQEiPmtW5SiY8KW1e7zjz27DG/view" target="_blank">See my resume</a></button>
             </div>
         </div>
 
@@ -82,23 +79,25 @@
         <div id="s">
 
             <div class="box2">
-                <div class="job">
 
-                    <img src="./icons/ibm.jpg" alt="">
-                    <p> Oct. 2011-Nov 2012 <br> IBM
-                        <BR> Tech Server Ops.</BR>
-                    </p>
-                </div>
 
 
                 <div class="job">
 
-                    <img id="ask" src="./icons/ask.jpg" alt="">
-                    <p> Feb. 2015 - May 2015 <br> ASK-EHS PVT. LTD
-                        <BR> Test Engineer</BR>
+                    <img id="mph" src="./icons/mph.jpg" alt="">
+                    <p> Feb. 2021 - Present <br> Mphasis
+                        <BR> Module Lead-Testing</BR>
                     </p>
                 </div>
 
+
+
+                <div class="job"> <span></span>
+                    <img src="./icons/fin.jpg" alt="">
+                    <p> June 2017 - Feb 2021 <br> Finserv
+                        <BR>STAE</BR>
+                    </p>
+                </div>
 
 
 
@@ -112,32 +111,28 @@
                 </div>
 
 
-                <div class="job"> <span></span>
-                    <img src="./icons/fin.jpg" alt="">
-                    <p> June 2017 - Feb 2021 <br> Finserv
-                        <BR>STAE</BR>
-                    </p>
-                </div>
-
 
                 <div class="job">
 
-                    <img id="mph" src="./icons/mph.jpg" alt="">
-                    <p> Feb. 2021 - Present <br> Mphasis
-                        <BR> Module Lead-Testing</BR>
+                    <img id="ask" src="./icons/ask.jpg" alt="">
+                    <p> Feb. 2015 - May 2015 <br> ASK-EHS PVT. LTD
+                        <BR> Test Engineer</BR>
                     </p>
                 </div>
+
+
+
+                <div class="job">
+                    <img src="./icons/ibm.jpg" alt="">
+                    <p> Oct. 2011-Nov 2012 <br> IBM
+                        <BR> Tech Server Ops.</BR>
+                    </p>
+                </div>
+
 
             </div>
 
         </div>
-
-
-
-
-
-
-
 
 
     </Section>
@@ -147,7 +142,7 @@
 
 
 
-    <section class="skills">
+    <section id="skill" class="skills">
         <h1>Skills</h1>
 
         <div class="sk">
@@ -159,6 +154,8 @@
 
             <div class="box4"> <img src="./icons/jenkins-icon.svg" alt=""> Jenkins</div>
 
+
+
         </div>
 
 
@@ -166,7 +163,10 @@
             <div class="box4"> <img src="./icons/git-scm-icon.svg" alt=""> Git</div>
             <div class="box4"> <img src="./icons/getpostman-icon.svg" alt=""> Postman</div>
             <div class="box4"><img id="sele" src="./icons/icons8-selenium.svg" alt=""> Selenium</div>
+
+            <div id="ist" class="box4"> <img src="./icons/download-removebg-preview.png" alt=""> ISTQB</div>
         </div>
+
 
 
 
@@ -222,44 +222,13 @@
     <section id="co" class="contact">
         <h1>Contact</h1>
 
-        <div class="cont1">
-
-            <div class="form">
-
-                <div class="bb" id="name">
-
-                    <input type="text" class="txt" required id="nm">
-                    <label class="lab" for="">Name</label>
-                </div>
-
-                <div class="bb" id="mail">
-
-                    <input type="text" class="txt" required id="ml">
-                    <label class="lab" class="txt" for="">Mail</label>
-                </div>
 
 
-                <div class="bb" id="mess">
-                    <textarea required class="txt" id="ms"></textarea>
-                    <label class="lab" id="m" for="">Message</label>
-                </div>
-
-                <button onclick='sendMail()' type="submit">Send</button>
-                <h2 id="msg2">Message Sent!</h2>
-
-
-            </div>
-
-            <span>
-
-            </span>
-
-            <div class="con2">
-                <p>&#128231; - sin.gaurav10@gmail.com</p>
-                <p>&#128222; - +91 84697 63533 </p>
-            </div>
-
+        <div class="con2">
+            <p>&#128231; - sin.gaurav10@gmail.com</p>
+            <p>&#128222; - +91 84697 63533 </p>
         </div>
+
 
     </section>
 
